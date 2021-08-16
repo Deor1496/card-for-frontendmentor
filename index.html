@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center">
+    <!-- the card starts here -->
+    <div class="container max-w-md w-2/3">
+      <img
+        src="./images/illustration-hero.svg"
+        alt="guy dancing"
+        class="rounded-t-lg"
+      />
+      <div class="bg-white p-8 rounded-b-lg text-center shadow-lg">
+        <h1 class="font-bold mb-4 text-lg">Order Summary</h1>
+        <p class="mb-4 text-gray-500">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <!-- the plan starts here -->
+        <div
+          class="
+            grid grid-cols-3
+            gap-4
+            bg-gray-100
+            rounded-lg
+            container
+            py-4
+            items-center
+            mb-4
+          "
+        >
+          <div class="container__left col-span-2 flex">
+            <img src="./images/icon-music.svg" alt="" srcset="" class="mx-2" />
+            <div class="flex flex-col ml-2">
+              <p class="font-bold">Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="
+              container__right
+              text-purple-600
+              hover:text-purple-700 hover:underline
+            "
+            >Change</a
+          >
+        </div>
+        <!-- the plan ends here  -->
+        <!-- this is the buttons container -->
+        <div class="buttons__section flex flex-col">
+          <button class="bg-blue-600 rounded-lg text-white p-3 mb-4 shadow-lg">
+            Proceed to Payment
+          </button>
+          <button class="text-gray-400">Cancel Order</button>
+        </div>
+        <!-- this is the buttons container -->
+      </div>
+    </div>
+
+    <!-- the card ends here  -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Deyxon Ortiz</a>.
+    </div> -->
+  </body>
+</html>
